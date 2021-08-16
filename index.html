@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lesson6</title>
+</head>
+<body>
+    <section>
+        <div class="sign-up-window">
+            <div class="registration">
+                <h2>Please sign up</h2>
+                <form class="sign-up">
+                    <input type="text" name="first-name" id="first-name" placeholder="First name">
+                    <div id="signUpFirstName" class="error text-error hidden">Incorrect first name</div>
+                    <input type="text" name="last-name" id="last-name" placeholder="Last name">
+                    <div id="signUpLastName" class="error text-error hidden">Incorrect last name</div>
+                    <input type="email" name="email" id="email" placeholder="Email address">
+                    <div id="signUpEmailExist" class="error email-error hidden">This email already exist</div>
+                    <div id="signUpEmail" class="error email-error hidden">Incorrect email address</div>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <div id="signUpPassword" class="error password-error hidden">Incorrect password</div>
+                    <input id="signUpButton" type="button" name="sign-up" id="sign-up" value="Sign up">
+                </form>
+                <h4 id="signInSwitcher">Sign in now</h4>
+            </div>
+        </div>
+        <div class="sign-in-window hidden">
+            <div class="logining">
+                <h2>Please sign in</h2>
+                <form class="sign-in">
+                    <input id="signInEmail" type="email" name="email" placeholder="Email address">
+                    <input id="signInPassword" type="password" name="password" placeholder="Password">
+                    <div class="error emptyStorage-error hidden">LocalStorage is empty</div>
+                    <div class="error incorrect-error hidden">Incorrect email or password</div>
+                    <input id="signInButton" type="button" name="sign-in" value="Sign in">
+                </form>
+                <h4 id="signUpSwitcher">Sign up now</h4>
+            </div>
+        </div>
+        <div class="user-window hidden">
+            <div class="user-info">
+                <div class="user-avatar"></div>
+                <h3 class="user-name"></h3>
+                <p class="user-email"></p>
+                <p class="user-position">Designer & Web Developer</p>
+                <hr>
+                <input id="signUpUserButton" type="button" name="sign-up" value="Sign up">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
