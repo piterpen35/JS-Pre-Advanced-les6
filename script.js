@@ -20,8 +20,8 @@ let signInEmail = getElement('#signInEmail');
 let signInPassword = getElement('#signInPassword');
 let signUpUserButton = getElement('#signUpUserButton');
 
-let textRegExp = /^[a-zA-Z]{4,16}$/;
-let passwordRegExp = /^[a-zA-Z0-9_\-.]{4,14}$/;
+let textRegExp = /^[a-zA-Zа-яА-Я]{4,16}$/;
+let passwordRegExp = /^[a-zA-Zа-яА-Я0-9_\-.]{4,14}$/;
 let emailRegExp = /^.+@.+$/;
 
 function clear () {

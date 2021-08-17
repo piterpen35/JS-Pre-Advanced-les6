@@ -98,8 +98,9 @@ input {
 }
 
 [type="text"]:focus, [type="email"]:focus, [type="password"]:focus {
-    border: 3px solid rgb(22, 192, 22);
+    border: 3px solid rgb(54, 50, 241);
 }
+
 
 [type="button"]:hover {
     background-color: rgb(54, 50, 241);
